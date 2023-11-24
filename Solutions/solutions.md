@@ -22,24 +22,24 @@ Which last names are not repeated?
 
 Which last names appear more than once? 
 
-   select last_name, count(*) 
-   
-   from actor
-   
-   group by last_name
-   
-   having count(*) > 1;
- 
+             select last_name, count(*) 
+             
+             from actor
+             
+             group by last_name
+             
+             having count(*) > 1;
+           
 
 Which actor has appeared in the most films? 
 
-  select a.actor_id,concat(a.first_name,' ',a.last_name) as ActorName,count(b.film_id) as countofmovies from actor a
-  
-  join film_actor b on a.actor_id = b.actor_id
-  
-  join film c on c.film_id = b.film_id  GROUP BY a.actor_id
-  
-  HAVING COUNT(*) > 1  order by countofmovies DESC
+            select a.actor_id,concat(a.first_name,' ',a.last_name) as ActorName,count(b.film_id) as countofmovies from actor a
+            
+            join film_actor b on a.actor_id = b.actor_id
+            
+            join film c on c.film_id = b.film_id  GROUP BY a.actor_id
+            
+            HAVING COUNT(*) > 1  order by countofmovies DESC
 
  
 
