@@ -12,7 +12,7 @@ Which actors have the last name ‘Johansson’?
 
 How many distinct actors' last names are there? 
 
-             select count(distinct(last_name)) from actor
+          select count(distinct(last_name)) from actor
     
 
 Which last names are not repeated? 
