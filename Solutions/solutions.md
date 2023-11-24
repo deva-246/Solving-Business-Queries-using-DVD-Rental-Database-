@@ -1,35 +1,46 @@
 ## Solutions
 
-Exercise 1: DVD Rental Database It is publicly available database, import this database and answer the following questions 
-Set 1: - 
 Which actors have the first name ‘Scarlett’?
-select * from actor where first_name like 'Scarlett'
+
+  select * from actor where first_name like 'Scarlett'
  
 
 Which actors have the last name ‘Johansson’? 
-select * from actor where last_name like 'Johansson'
+
+   select * from actor where last_name like 'Johansson'
  
 
 How many distinct actors' last names are there? 
-select count(distinct(last_name)) from actor
- 
+
+   select count(distinct(last_name)) from actor
+    
 
 Which last names are not repeated? 
-select distinct(last_name) from actor
- 
+
+   select distinct(last_name) from actor
+    
 
 Which last names appear more than once? 
-select last_name, count(*) 
-from actor
-group by last_name
-having count(*) > 1;
+
+   select last_name, count(*) 
+   
+   from actor
+   
+   group by last_name
+   
+   having count(*) > 1;
  
 
 Which actor has appeared in the most films? 
-select a.actor_id,concat(a.first_name,' ',a.last_name) as ActorName,count(b.film_id) as countofmovies from actor a
-join film_actor b on a.actor_id = b.actor_id
-join film c on c.film_id = b.film_id  GROUP BY a.actor_id
-HAVING COUNT(*) > 1  order by countofmovies DESC
+
+  select a.actor_id,concat(a.first_name,' ',a.last_name) as ActorName,count(b.film_id) as countofmovies from actor a
+  
+  join film_actor b on a.actor_id = b.actor_id
+  
+  join film c on c.film_id = b.film_id  GROUP BY a.actor_id
+  
+  HAVING COUNT(*) > 1  order by countofmovies DESC
+
  
 
 
