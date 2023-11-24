@@ -2,22 +2,22 @@
 
 Which actors have the first name ‘Scarlett’?
 
-  select * from actor where first_name like 'Scarlett'
+          select * from actor where first_name like 'Scarlett'
  
 
 Which actors have the last name ‘Johansson’? 
 
-   select * from actor where last_name like 'Johansson'
+           select * from actor where last_name like 'Johansson'
  
 
 How many distinct actors' last names are there? 
 
-   select count(distinct(last_name)) from actor
+             select count(distinct(last_name)) from actor
     
 
 Which last names are not repeated? 
 
-   select distinct(last_name) from actor
+         select distinct(last_name) from actor
     
 
 Which last names appear more than once? 
