@@ -45,12 +45,17 @@ Which actor has appeared in the most films?
 
 
 Is ‘Academy Dinosaur’ available for rent from Store 1? 
-select count(b.film_id) as Copiesofstore1 from
-store a 
-join inventory b on a.store_id = b.store_id
-join  film c on c.film_id = b.film_id
-where c.title = 'Academy Dinosaur' and b.store_id = 1
- 
+
+          select count(b.film_id) as Copiesofstore1 from
+          
+          store a 
+          
+          join inventory b on a.store_id = b.store_id
+          
+          join  film c on c.film_id = b.film_id
+          
+          where c.title = 'Academy Dinosaur' and b.store_id = 1
+           
 
 
 Insert a record to represent Mary Smith renting ‘Academy Dinosaur’ from Mike Hillyer at Store 1 today . 
