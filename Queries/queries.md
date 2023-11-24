@@ -1,6 +1,5 @@
 ## Queries
 
-- 
 1.	Which actors have the first name ‘Scarlett’ 
 
 2.	Which actors have the last name ‘Johansson’ 
