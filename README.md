@@ -1,5 +1,12 @@
 # Solving-Business-Queries-using-PostgreSQL-on-DVD-Rental-Database
 
+## Prerequisites
+
+  1. PostgreSQL
+  2. DVD Renatl .rar file
+  3. pgAdmin
+  4. Familiarity with SQL Joins, subqueries, average functions, views and basics
+
 ## PostgreSQL
 
 PostgreSQL is an advanced, enterprise class open source relational database that supports both SQL (relational) and JSON (non-relational) querying. It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications. 
