@@ -5,7 +5,6 @@
   1. PostgreSQL
   2. DVD Rental .rar file
   3. pgAdmin
-  4. Familiarity with SQL Joins, subqueries, average functions, views and basics
 
 ## PostgreSQL
 
